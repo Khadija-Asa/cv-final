@@ -1,5 +1,6 @@
 /* GOOGLE FONTS */
 @import url('https://fonts.googleapis.com/css2?family=Rosario:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Candal&display=swap');
 
 *{
   box-sizing: border-box;
@@ -138,11 +139,54 @@ html{
     transform: translateY(-8px) rotate(-45deg);
   }
   .icons-mobile a {
-    font-size: 2rem;
+    font-size: 1.5rem;
     color: #1A6449;
     padding: 1rem;
   }
   .social-media-mobile {
     margin: 0 auto;
   }
+}
+
+/*===== HOME =====*/
+
+.home {
+  height: calc(50vh - 3rem);
+  padding: 30px 2px 10px 2px;
+}
+
+.container {
+  display: flex;
+}
+
+.home_title {
+  font-size: 1.3rem;
+  line-height: 1.8rem;
+  padding: 15px 0 0 0;
+}
+
+.home_title_color {
+  color: #1A6449;
+  font-weight: bold;
+}
+
+.home_image {
+  width: 50%;
+}
+
+.home_info {
+  background-color: #1a6449;
+  border-radius: 0.5rem;
+  box-shadow:
+  0 10px 27px rgba(0, 0, 0, 0.05);
+  color: #fff;
+  display: inline-block;
+  padding: 0.75rem 1rem;
+  text-align: center;
+  margin-top: -2rem;
+}
+
+.home_info_color {
+  font-size: 1rem;
+  font-family: 'Candal', sans-serif;
 }
