@@ -98,7 +98,7 @@ html{
         0 10px 27px rgba(0, 0, 0, 0.05);
     position: fixed;
     right: -100%;
-    top: 4.1rem;
+    top: 4rem;
     flex-direction: column;
     background-color: #0D1B2A;
     width: 80%;
@@ -107,6 +107,8 @@ html{
     transition: 0.3s;
     padding: 0 0 0.5rem 1rem;
     justify-content: space-evenly;
+    z-index: 100;
+    cursor: pointer;
   }
   .nav-menu.active {
     right: 0;
