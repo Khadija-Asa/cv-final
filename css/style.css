@@ -1,10 +1,10 @@
 /* GOOGLE FONTS */
-@import url('https://fonts.googleapis.com/css2?family=Rosario:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Glory:wght@100;300&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Candal&display=swap');
 
 *{
   box-sizing: border-box;
-  font-family: 'Rosario', sans-serif;
+  font-family: 'Glory', sans-serif;
 }
 
 ul, li {
@@ -86,10 +86,8 @@ html{
   background-color: #1A6449;
 }
 
-.nav-logo {
-  font-size: 2rem;
-  font-weight: 500;
-  color: #1A6449;
+.nav-logo img{
+  width: 10rem;
 }
 
 @media only screen and (max-width: 1165px) {
@@ -99,11 +97,11 @@ html{
         0 10px 27px rgba(0, 0, 0, 0.05);
     position: fixed;
     right: -100%;
-    top: 4rem;
+    top: 3rem;
     flex-direction: column;
     background-color: #0D1B2A;
     width: 80%;
-    height: 70vh;
+    height: 60vh;
     border-radius: 5px;
     transition: 0.3s;
     padding: 0 0 0.5rem 1rem;
@@ -124,6 +122,9 @@ html{
     font-size: 1.1rem;
     font-weight: 200;
     color: #fff;
+  }
+  .nav-logo img{
+    width: 9rem;
   }
   .burger {
     display: block;
@@ -147,6 +148,66 @@ html{
     margin: 0 auto;
   }
 }
+
+@media only screen and (min-width: 1165px) {
+  .nav-menu {
+    align-items: flex-start;
+    box-shadow:
+        0 10px 27px rgba(0, 0, 0, 0.05);
+    position: fixed;
+    right: -100%;
+    top: 3rem;
+    flex-direction: column;
+    background-color: #0D1B2A;
+    width: 80%;
+    height: 60vh;
+    border-radius: 5px;
+    transition: 0.3s;
+    padding: 0 0 0.5rem 1rem;
+    justify-content: space-evenly;
+    z-index: 100;
+    cursor: pointer;
+  }
+  .nav-menu.active {
+    right: 0;
+  }
+  .navbar {
+    padding: 0.5rem 1rem;
+  }
+  .nav-item {
+    margin: 0;
+  }
+  .nav-link{
+    font-size: 1.1rem;
+    font-weight: 200;
+    color: #fff;
+  }
+  .nav-logo img{
+    width: 9rem;
+  }
+  .burger {
+    display: block;
+    cursor: pointer;
+  }
+  .burger.active .bar:nth-child(2) {
+    opacity: 0;
+  }
+  .burger.active .bar:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+  }
+  .burger.active .bar:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
+  }
+  .icons-mobile a {
+    font-size: 1.5rem;
+    color: #1A6449;
+    padding: 1rem;
+  }
+  .social-media-mobile {
+    margin: 0 auto;
+  }
+}
+
 
 /*===== HOME =====*/
 
