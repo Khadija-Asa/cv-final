@@ -29,15 +29,15 @@ html{
 
 /*===== NAV =====*/
 
-.header{
+.header {
   box-shadow: 0 3px 4px rgba(146,161,176,.15);
 }
 
 .navbar {
+  align-items: center;
   display: flex;
   justify-content: space-between;
-  align-items: center;
-  padding: 1rem 5rem 1rem 15rem;
+  padding: 10px 50px 10px 160px;
 }
 
 .burger {
@@ -46,7 +46,7 @@ html{
 
 .bar {
   display: block;
-  width: 25px;
+  width: 20px;
   height: 3px;
   margin: 5px auto;
   -webkit-transition: all 0.3s ease-in-out;
@@ -87,10 +87,37 @@ html{
 }
 
 .nav-logo img{
-  width: 10rem;
+  width: 12rem;
 }
 
-@media only screen and (max-width: 1165px) {
+.social-media {
+  background-color: #1A6449;
+  border-radius: 10px 0px 0px 10px;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  opacity: 5;
+  padding: 10px;
+  position: fixed;
+  right: 0;
+  top: 230px;
+  width: 60px;
+  z-index: 1100;
+}
+
+.social-media a {
+  color: #fff;
+  font-size: 25px;
+  margin: 0 auto;
+  padding: 10px;
+}
+
+.social-media a:hover {
+  transition: all .2s ease-in-out;
+  transform: scale(1.1);
+}
+
+@media only screen and (max-width: 992px) {
   .nav-menu {
     align-items: flex-start;
     box-shadow:
@@ -139,7 +166,7 @@ html{
   .burger.active .bar:nth-child(3) {
     transform: translateY(-8px) rotate(-45deg);
   }
-  .icons-mobile a {
+  .social-media-mobile a {
     font-size: 1.5rem;
     color: #1A6449;
     padding: 1rem;
@@ -147,20 +174,23 @@ html{
   .social-media-mobile {
     margin: 0 auto;
   }
+  .social-media {
+    display: none;
+  }
 }
 
-@media only screen and (min-width: 1165px) {
+@media only screen and (min-width: 993px) and (max-width: 1366px) {
   .nav-menu {
     align-items: flex-start;
     box-shadow:
         0 10px 27px rgba(0, 0, 0, 0.05);
     position: fixed;
     right: -100%;
-    top: 3rem;
+    top: 4.3rem;
     flex-direction: column;
     background-color: #0D1B2A;
-    width: 80%;
-    height: 60vh;
+    width: 50%;
+    height: 50vh;
     border-radius: 5px;
     transition: 0.3s;
     padding: 0 0 0.5rem 1rem;
@@ -172,18 +202,18 @@ html{
     right: 0;
   }
   .navbar {
-    padding: 0.5rem 1rem;
+    padding: 1rem 3rem;
   }
   .nav-item {
     margin: 0;
   }
   .nav-link{
-    font-size: 1.1rem;
+    font-size: 1.5rem;
     font-weight: 200;
     color: #fff;
   }
   .nav-logo img{
-    width: 9rem;
+    width: 10rem;
   }
   .burger {
     display: block;
@@ -198,16 +228,24 @@ html{
   .burger.active .bar:nth-child(3) {
     transform: translateY(-8px) rotate(-45deg);
   }
-  .icons-mobile a {
-    font-size: 1.5rem;
+  .social-media-mobile a {
+    font-size: 2rem;
     color: #1A6449;
-    padding: 1rem;
+    padding: 2rem;
   }
   .social-media-mobile {
     margin: 0 auto;
   }
+  .social-media {
+    display: none;
+  }
 }
 
+@media only screen and (min-width: 1367px) {
+  .social-media-mobile {
+    display: none;
+  }
+}
 
 /*===== HOME =====*/
 
@@ -303,3 +341,4 @@ html{
     margin-left: 10px;
   }
 }
+
