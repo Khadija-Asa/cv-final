@@ -27,6 +27,10 @@ html{
   scroll-behavior: smooth;
 }
 
+.primary-color {
+  color: #1A6449;
+}
+
 /*===== NAV =====*/
 
 .header {
