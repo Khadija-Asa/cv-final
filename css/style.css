@@ -254,7 +254,6 @@ html{
 /*===== HOME =====*/
 
 .home {
-  height: calc(50vh - 3rem);
   padding: 30px 2px 10px 2px;
 }
 
@@ -279,21 +278,33 @@ html{
   width: 100%;
 }
 
-.home_info {
-  background-color: #1a6449;
-  border-radius: 0.5rem 5rem 5rem 5rem;
-  box-shadow:
-  0px 0px 15px -5px gray;
-  color: #fff;
-  font-size: 0.75rem;
-  padding: 0.75rem 1rem;
-  text-align: center;
-  width: 100%;
+.home_buttons {
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  padding: 10px 15px 10px 15px;
+  font-size: 1rem;
 }
 
-.home_info_color {
-  font-family: 'Candal', sans-serif;
-  padding-left: 5px;
+.home_info {
+  background: #1A6449;
+  border-radius: 0.5rem 5rem 5rem 5rem;
+  color: #fff;
+  padding: 0.75rem 1rem;
+  margin-right: 3%;
+}
+
+.home_button  {
+  background: #fff;
+  border-radius: 0.5rem 5rem 5rem 5rem;
+  border: 2px solid #1A6449;
+  border-color: #1A6449;
+  padding: 0.75rem 1rem;
+}
+
+.home_button a {
+  color: #1A6449;
+  font-size: 1rem;
 }
 
 @media only screen and (min-width: 1024px) {
