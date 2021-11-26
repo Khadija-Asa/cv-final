@@ -1,21 +1,6 @@
-footer {
-  bottom: 0;
-  position: absolute;
-  height: 0;
-  padding-top: 50px;
-}
-
-.box {
-  background: no-repeat center url(/documents/images/waves.png);
-  background-size: cover;
-  padding: 20px;
-  margin: 0 auto;
-}
-
-.row {
-  color: #fff;
-  font-size: 18px;
-  margin: 0 auto;
+footer .container {
+  display: flex;
+  flex-direction: row;
 }
 
 .copyright {
