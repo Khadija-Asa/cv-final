@@ -2,7 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Glory:wght@100;300&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Candal&display=swap');
 
-*{
+* {
   box-sizing: border-box;
   font-family: 'Glory', sans-serif;
 }
@@ -13,22 +13,23 @@ ul, li {
   list-style: none;
 }
 
-a{
+a {
   text-decoration: none;
 }
 
-img{
+img {
   max-width: 100%;
   height: auto;
   display: block;
 }
 
-html{
+html {
   scroll-behavior: smooth;
 }
 
 .primary-color {
   color: #1A6449;
+  font-weight: bold;
 }
 
 /*===== NAV =====*/

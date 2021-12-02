@@ -1,7 +1,47 @@
+.social_media {
+  display: flex;
+  justify-content: center;
+  border-bottom: 1px solid rgb(212, 212, 212);
+  padding: 20px;
+}
+
 .social_media a {
   color: #1A6449;
   font-size: 1.5rem;
   padding: 0.3rem;
+}
+
+.social_media a:hover {
+  transition: all .2s ease-in-out;
+  transform: scale(1.2);
+}
+
+.informations_list {
+  margin-top: 20px;
+  padding: 5px;
+}
+
+.informations_list li {
+  margin-bottom: 10px;
+}
+
+.informations_logo img {
+  margin: 0 auto;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  width: 60%;
+}
+
+.informations a {
+  color: black;
+}
+
+.informations_title {
+  color: #1A6449;
+  font-weight: bold;
+  text-decoration: 2px underline #1A6449;
+  text-transform: uppercase;
+  margin-bottom: 20px;
 }
 
 .copyright {
@@ -9,4 +49,5 @@
   box-shadow:
         0 10px 27px rgba(0, 0, 0, 0.05);
   font-weight: bold;
+  margin-top: 40px;
 }
