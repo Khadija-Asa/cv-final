@@ -13,12 +13,14 @@
 
 .social_media a:hover {
   transition: all .2s ease-in-out;
-  transform: scale(1.2);
+  transform: scale(1.1);
 }
 
 .informations_list {
   margin-top: 20px;
   padding: 5px;
+  margin: 0 auto;
+
 }
 
 .informations_list li {
@@ -50,4 +52,37 @@
         0 10px 27px rgba(0, 0, 0, 0.05);
   font-weight: bold;
   margin-top: 40px;
+}
+
+@media only screen and (min-width: 993px) and (max-width: 1366px) {
+  .informations_logo {
+    margin: auto;
+  }
+  .informations {
+    padding: 25px 80px 25px 80px;
+  }
+  .copyright {
+    margin-top: 0;
+  }
+}
+
+@media only screen and (min-width: 1366px) {
+  .social_media a {
+    font-size: 2rem;
+    margin-right: 10px;
+  }
+  .informations_logo {
+    margin: auto;
+  }
+  .informations {
+    font-size: 1.2rem;
+    padding: 30px 200px 30px 200px;
+  }
+  .informations_title 
+  {
+    font-size: 1.3rem;
+  }
+  .copyright {
+    margin-top: 0;
+  }
 }
