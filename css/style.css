@@ -256,7 +256,6 @@ html {
 
 .home {
   padding: 30px 5px 0 5px;
-  height: 100vh;
 }
 
 .container-fluid {
@@ -336,6 +335,9 @@ html {
 }
 
 @media only screen and (min-width: 1200px) {
+  .home {
+    height: 100vh;
+  }
   .text_box {
     margin: 0 auto;
   }

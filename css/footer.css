@@ -1,3 +1,8 @@
+footer {
+  background: url(/documents/images/meteor.svg) no-repeat;
+  background-size: cover;
+}
+
 .social_media {
   display: flex;
   justify-content: center;
