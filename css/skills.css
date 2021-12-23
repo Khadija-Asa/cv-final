@@ -17,11 +17,6 @@ h4 {
   margin: 0 auto;
 }
 
-hr {
-  background-color: #1A6449;
-  width: 50%;
-}
-
 @media only screen and (min-width: 1024px) {
   .illustration_box {
     display: flex;

@@ -20,4 +20,3 @@ function closeMenu() {
 }
 
 // SCROLL DOWN BUTTON
-

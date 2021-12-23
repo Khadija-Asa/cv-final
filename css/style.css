@@ -35,7 +35,10 @@ html {
 /*===== NAV =====*/
 
 .header {
+  background-color: #fff;
   box-shadow: 0 3px 4px rgba(146,161,176,.15);
+  position: fixed;
+  width: 100%;
 }
 
 .navbar {
@@ -255,7 +258,7 @@ html {
 /*===== HOME =====*/
 
 .home {
-  padding: 30px 5px 0 5px;
+  padding: 70px 5px 0 5px;
 }
 
 .container-fluid {
@@ -314,7 +317,7 @@ html {
 @media only screen and (min-width: 768px) {
   .home {
     margin: 0 auto;
-    padding: 30px;
+    padding: 60px;
   }
   .container-fluid {
     display: flex;
@@ -349,4 +352,14 @@ html {
     font-size: 1.4rem;
     padding: 25px;
   }
+}
+
+h3 {
+  padding-top: 5rem;
+}
+
+hr {
+  background-color: #1A6449;
+  margin-bottom: 5rem;
+  width: 50%;
 }
