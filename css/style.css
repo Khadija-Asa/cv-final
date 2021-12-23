@@ -363,3 +363,15 @@ hr {
   margin-bottom: 5rem;
   width: 50%;
 }
+
+.back_to_top a {
+  font-size: 40px;
+}
+
+#btn-back-to-top {
+  bottom: 30px;
+  color: #1A6449;
+  display: none;
+  position: fixed;
+  right: 30px;
+}
