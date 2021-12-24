@@ -1,6 +1,6 @@
 .portfolio_box {
-  padding: 0 10px 0 10px;
   display: grid;
+  padding: 0 10px 0 10px;
   row-gap: 1.5rem;
 }
 
@@ -24,6 +24,18 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-column-gap: 5rem;
+    margin: auto;
     padding: 0 50px 0 50px;
+  }  
+}
+
+@media only screen and (min-width: 1440px) {
+  .portfolio_box {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 5rem;
+    margin: auto;
+    padding: 0 50px 0 50px;
+    width: 90%;
   }  
 }

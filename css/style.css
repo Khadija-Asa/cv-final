@@ -34,10 +34,14 @@ html {
 
 /*===== NAV =====*/
 
+main {
+}
+
 .header {
   background-color: #fff;
   box-shadow: 0 3px 4px rgba(146,161,176,.15);
   position: fixed;
+  z-index: 1;
   width: 100%;
 }
 

@@ -1,0 +1,26 @@
+h6 {
+ color: #0D1B2A;
+}
+
+.rounded-lg {
+  border-radius: 1rem !important;
+}
+
+.text-small {
+  font-size: 0.9rem !important;
+}
+
+.custom-separator {
+  background-color: #1A6449 !important;
+  width: 5rem;
+  height: 6px;
+  border-radius: 1rem;
+}
+
+.text-uppercase {
+  letter-spacing: 0.2em;
+}
+
+.fa-check {
+  color: #1A6449 !important;
+}
