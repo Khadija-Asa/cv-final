@@ -22,9 +22,7 @@ footer {
 
 .informations_list {
   display: flex;
-  margin: 0 auto;
   margin-top: 20px;
-  padding: 5px;
 }
 
 .informations_list li {
@@ -33,6 +31,7 @@ footer {
 
 .informations_list ul {
   margin-left: 1rem;
+  margin: 0 auto;
 }
 
 .informations_logo img {
@@ -67,25 +66,33 @@ footer {
   margin-top: 2rem;
 }
 
+@media only screen and (max-width: 333px) {
+  .informations_list {
+    margin: 0 auto;
+  }
+  footer .container-fluid {
+    padding-left: 1px;
+    padding-right: 1px;
+  }
+}
+
 @media only screen and (min-width: 768px) {
   .informations_logo {
-    margin: 0 auto;
-    width: 50%;
+    width: 40%;
   }
   .informations_list {
     margin-top: 3rem;
   }
+  .informations_list ul {
+    margin-left: 4rem;
+  } 
 }
 
 @media only screen and (min-width: 993px) and (max-width: 1366px) {
-  .informations_list {
-    margin-left: -100px;
-  }
   .informations_list ul {
-    margin-left: 4rem;
+    margin-left: 6rem;
   }  
   .informations_logo {
-    margin: 0 auto;
     margin-left: 10px;
   }
 }
@@ -96,20 +103,15 @@ footer {
     margin-right: 10px;
   }
   .informations_logo {
-    margin: 0 auto;
     margin-left: 10px;
   }
   .informations {
     font-size: 1.2rem;
   }
-  .informations_title 
-  {
+  .informations_title {
     font-size: 1.3rem;
   }
-  .informations_list {
-    margin-left: -200px;
-  }
   .informations_list ul {
-    margin-left: 6rem;
+    margin-left: 10rem;
   } 
 }
