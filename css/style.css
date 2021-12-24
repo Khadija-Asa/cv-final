@@ -153,7 +153,7 @@ html {
   .nav-item {
     margin: 0;
   }
-  .nav-link{
+  .nav-link {
     font-size: 1.1rem;
     font-weight: 200;
     color: #fff;
@@ -187,7 +187,7 @@ html {
   }
 }
 
-@media only screen and (min-width: 993px) and (max-width: 1366px) {
+@media only screen and (min-width: 992px) and (max-width: 1024px) {
   .nav-menu {
     align-items: flex-start;
     box-shadow:
@@ -198,7 +198,7 @@ html {
     flex-direction: column;
     background-color: #0D1B2A;
     width: 50%;
-    height: 50vh;
+    height: 80vh;
     border-radius: 5px;
     transition: 0.3s;
     padding: 0 0 0.5rem 1rem;
@@ -216,7 +216,7 @@ html {
     margin: 0;
   }
   .nav-link{
-    font-size: 1.5rem;
+    font-size: 1.3rem;
     font-weight: 200;
     color: #fff;
   }
@@ -249,7 +249,7 @@ html {
   }
 }
 
-@media only screen and (min-width: 1366px) {
+@media only screen and (min-width: 1025px) {
   .social-media-mobile {
     display: none;
   }
@@ -262,11 +262,12 @@ html {
 }
 
 .container-fluid {
-  margin: auto;
+  margin: 0 auto;
   align-items: center;
 }
 
 .home_title {
+  line-height: 2.8rem;
   font-size: 1.8rem;
 }
 
@@ -317,19 +318,21 @@ html {
 @media only screen and (min-width: 768px) {
   .home {
     margin: 0 auto;
-    padding: 60px;
+  }
+  .text_box {
+    margin-left: 30px;
   }
   .container-fluid {
     display: flex;
     flex-direction: row;
   }  
   .home_title {
-    font-size: 1.5rem;
+    font-size: 1.8rem;
+    line-height: 2.5rem;
     padding-top: 40px;
   }  
   .home_image {
-    float: left;
-    width: 35%;
+    width: 45%;
  }
   .home_info a,
   .home_button a {
@@ -337,20 +340,53 @@ html {
   }
 }
 
-@media only screen and (min-width: 1200px) {
-  .home {
-    height: 100vh;
+@media only screen and (min-width: 1024px) {
+  .navbar {
+    padding: 10px 50px 10px 50px;
   }
   .text_box {
     margin: 0 auto;
+    margin-top: 60px;
   }
   .home_title {
-    font-size: 3.5rem;
+    font-size: 2rem;
+    line-height: 3rem;
   }
   .home_info a,
   .home_button a {
-    font-size: 1.4rem;
-    padding: 25px;
+    font-size: 1.2rem;
+    padding: 10px;
+  }
+  .home_image {
+    margin-top: 60px;
+    width: 40%;
+  }  
+}
+
+@media only screen and (min-width: 1440px) {
+  .home_image {
+    margin-top: 90px;
+    width: 40%;
+  }  
+  .home_title {
+    font-size: 3rem;
+    line-height: 4rem;
+  }
+}
+
+@media only screen and (min-width: 1880px) {
+  .home_image {
+    margin-top: 100px;
+    width: 40%;
+  }
+  .home_title {
+    font-size: 4rem;
+    margin-top: 80px;
+    line-height: 6rem;
+  }
+  .home_info a,
+  .home_button a {
+    font-size: 1.8rem;
   }
 }
 
