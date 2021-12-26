@@ -1,10 +1,12 @@
-.skills h4 {
+.skills_title {
   margin: 30px auto;
+  width: 100%;
 }
 
 .skills_img {
   display: flex;
   flex-wrap: wrap;
+  padding-bottom: 50px;
 }
 
 .skills_img img {
@@ -49,8 +51,8 @@
   height: 90px;
   border-radius: 50%;
   background: var(--bg-color);
-  top: 5px;
-  left: 10px;
+  top: 11px;
+  left: 11px;
   z-index: 0;
   transition: transform 0.3s ease-out;
 }
@@ -68,7 +70,7 @@
 }
 
 .card p {
-  font-size: 1.5rem;
+  font-size: 1rem;
   color: black;
   margin-top: 30px;
   z-index: 1000;
@@ -126,4 +128,116 @@
 }
 .mysql {
   --bg-color: #00618a;
+}
+.filezilla {
+  --bg-color: #b80000;
+}
+
+@media only screen and (min-width: 768px) {
+  .skills_img {
+    display: flex;
+    flex-wrap: wrap;
+  }  
+  .card {
+    margin: 10px;
+  }  
+}
+
+@media only screen and (min-width: 0) and (max-width: 1023px) {
+  .none {
+    display: none;
+  }
+  .skills_top {
+    margin-bottom: 50px;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  .card {
+    margin: auto;
+    margin: 15px;
+  }
+  .skills_img {
+    display: flex;
+    flex-wrap: wrap;
+    width: 50%;
+  } 
+  .skills_box {
+    display: flex;
+  }
+  .skills_title {
+    width: 100%;
+  }
+  .none {
+    visibility: hidden;
+  }
+  .vertical {
+    display: inherit;
+  }
+  .vertical {
+    border: 2px solid #1A6449;
+    height: 80%;
+    margin: 50% 35px 0 35px;
+  }
+}
+
+@media only screen and (min-width: 1440px) {
+  .card {
+    margin: 0 auto;
+    margin: 10px;
+  }
+  .skills_img {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    margin: 50px;
+  } 
+  .vertical {
+    display: inherit;
+  }
+  .vertical {
+    border: solid #1A6449;
+    height: 80%;
+    margin: 50% 20px 0 20px;
+  }
+}
+
+@media only screen and (min-width: 1440px) {
+  .card {
+    margin: 0 auto;
+    margin-bottom: 20px;
+    margin: 20px;
+  }
+  .skills_img {
+    display: flex;
+    flex-wrap: wrap;
+    margin: auto;
+    margin-left: 80px;
+    margin-right: 80px;
+    width: 50%;
+  }
+  .vertical {
+    display: inherit;
+  }
+  .vertical {
+    border: solid #1A6449;
+    height: 90%;
+    margin: 50% 20px 0 20px;
+    width: 1px;
+  }
+  .card {
+    width: 150px;
+    height: 180px;
+    margin: 10px auto;
+  }
+  .overlay {
+    top: 25px;
+    left: 25px;
+  }
+  .skills_title h4 {
+    font-size: 1.5rem;
+  }
+  .card p {
+    font-size: 1.3rem;
+  }
 }

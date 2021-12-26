@@ -84,7 +84,7 @@
     <section class="home">
       <div class="container-fluid">
         <div class="text_box">
-          <h1 class="home_title">Hey ! Je suis<br> <span class="home_title_color">Ait Si Ali Khadidja</span><br> Développeur Web et Mobile <br> Front-End Freelance</h1>
+          <h1 class="home_title">Hey ! Je suis<br><span class="home_title_color type">Ait Si Ali Khadidja</span><br> Développeur Web et Mobile <br> Front-End Freelance</h1>
           <div class="home_buttons">
             <p class="home_info"><a href="tel:+336.14.72.05.66">+336.14.72.05.66</a></p>
             <p class="home_button"><a href="documents/pdf/développeur-web-khadidja.pdf" download><i class="fas fa-file-download"></i> Mon CV</a></p>
@@ -115,11 +115,13 @@
     <section class="skills" id="skills">
       <h3 class="skills_title text-center">Compétences</h3> <hr>
       <div class="container-fluid">
-      <div class="skills_box">
+        <div class="skills_box">
 
-        <h4 class="text-center">Langages de programmation</h4>
-        <div class="skills_img img-thumbnail">
-          <div class="card html shadow">
+          <div class="skills_img img-thumbnail skills_top shadow">
+            <div class="skills_title">
+              <h4 class="text-center">Langage de programmation</h4>
+            </div>  
+            <div class="card html shadow">
             <div class="overlay"></div>
               <div class="circle">
                 <img class="img-fluid" src="documents/images/icônes/icons8-html-5.svg" alt="Icône HTML">
@@ -147,6 +149,13 @@
               </div>
               <p>React</p>
           </div>
+          <div class="card php shadow">
+            <div class="overlay"></div>
+              <div class="circle">
+                <img class="img-fluid" src="documents/images/icônes/icons8-php.svg" alt="Icône Php">
+              </div>
+              <p>PHP</p>
+          </div>
           <div class="card mysql shadow">
             <div class="overlay"></div>
               <div class="circle">
@@ -154,12 +163,19 @@
               </div>
               <p>MySQL</p>
           </div>
-          <div class="card php shadow">
+          <div class="card laravel shadow">
             <div class="overlay"></div>
               <div class="circle">
-                <img class="img-fluid" src="documents/images/icônes/icons8-php.svg" alt="Icône Php">
+                <img class="img-fluid" src="documents/images/icônes/laravel.png" alt="Icône Laravel">
               </div>
-              <p>PHP</p>
+              <p>Laravel</p>
+          </div>
+          <div class="card bootstrap shadow">
+            <div class="overlay"></div>
+              <div class="circle">
+                <img class="img-fluid" src="documents/images/icônes/icons8-bootstrap.svg" alt="Icône Bootstrap">
+              </div>
+              <p>Bootstrap</p>
           </div>
           <div class="card wordpress shadow">
             <div class="overlay"></div>
@@ -177,38 +193,13 @@
           </div>
         </div>
 
-        <span class="vertical"></span>
-
-        <h4 class="text-center">Frameworks</h4>
-        <div class="skills_img img-thumbnail">
-          <div class="card laravel shadow">
-            <div class="overlay"></div>
-              <div class="circle">
-                <img class="img-fluid" src="documents/images/icônes/laravel.png" alt="Icône Laravel">
-              </div>
-              <p>Laravel</p>
-          </div>
-          <div class="card bootstrap shadow">
-            <div class="overlay"></div>
-              <div class="circle">
-                <img class="img-fluid" src="documents/images/icônes/icons8-bootstrap.svg" alt="Icône Bootstrap">
-              </div>
-              <p>Bootstrap</p>
-          </div>
-        </div>
-
         <div>
           <span class="vertical"></span>
         </div>
 
-        <h4 class="text-center">Outils de travail :</h4>
-        <div class="skills_img img-thumbnail">
-          <div class="card vscode shadow">
-            <div class="overlay"></div>
-              <div class="circle">
-                <img class="img-fluid" src="documents/images/icônes/icons8-vscode.png" alt="Icône VSCode">
-              </div>
-              <p>VSCode</p>
+        <div class="skills_img img-thumbnail shadow">
+          <div class="skills_title">
+            <h4 class="text-center">Outils de travail</h4>
           </div>
           <div class="card ubuntu shadow">
             <div class="overlay"></div>
@@ -217,12 +208,12 @@
               </div>
               <p>Ubuntu</p>
           </div>
-          <div class="card github shadow">
+          <div class="card vscode shadow">
             <div class="overlay"></div>
               <div class="circle">
-                <img class="img-fluid" src="documents/images/icônes/icons8-github.svg" alt="Icône Github">
+                <img class="img-fluid" src="documents/images/icônes/icons8-vscode.png" alt="Icône VSCode">
               </div>
-              <p>Github</p>
+              <p>VSCode</p>
           </div>
           <div class="card git shadow">
             <div class="overlay"></div>
@@ -230,6 +221,20 @@
                 <img class="img-fluid" src="documents/images/icônes/icons8-git.png" alt="Icône Git">
               </div>
               <p>Git</p>
+          </div>
+          <div class="card github shadow">
+            <div class="overlay"></div>
+              <div class="circle">
+                <img class="img-fluid" src="documents/images/icônes/icons8-github.svg" alt="Icône Github">
+              </div>
+              <p>Github</p>
+          </div>
+          <div class="card filezilla shadow">
+            <div class="overlay"></div>
+              <div class="circle">
+                <img class="img-fluid" src="documents/images/icônes/icons8-filezilla.png" alt="Icône FileZilla">
+              </div>
+              <p>FileZilla</p>
           </div>
           <div class="card trello shadow">
             <div class="overlay"></div>
@@ -244,6 +249,27 @@
                 <img class="img-fluid" src="documents/images/icônes/icons8-figma.png" alt="Icône Figma">
               </div>
               <p>Figma</p>
+          </div>
+          <div class="card none shadow">
+            <div class="overlay"></div>
+              <div class="circle">
+                <img class="img-fluid" src="documents/images/icônes/icons8-figma.png" alt="Icône none">
+              </div>
+              <p>none</p>
+          </div>
+          <div class="card none shadow">
+            <div class="overlay"></div>
+              <div class="circle">
+                <img class="img-fluid" src="documents/images/icônes/icons8-figma.png" alt="Icône none">
+              </div>
+              <p>none</p>
+          </div>
+          <div class="card none shadow">
+            <div class="overlay"></div>
+              <div class="circle">
+                <img class="img-fluid" src="documents/images/icônes/icons8-figma.png" alt="Icône none">
+              </div>
+              <p>none</p>
           </div>
         </div>
       </div>

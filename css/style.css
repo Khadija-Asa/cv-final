@@ -280,6 +280,10 @@ main {
   font-weight: bold;
 }
 
+.type {
+  letter-spacing: .2rem;
+}
+
 .home_image {
   margin: auto;
   margin-top: 20px;
@@ -317,6 +321,12 @@ main {
 .home_button a {
   color: #1A6449;
   font-size: 1rem;
+}
+
+@media only screen and (min-width: 0) and (max-width: 374px) {
+  .home_title {
+    font-size: 1.6rem;
+  }
 }
 
 @media only screen and (min-width: 768px) {
@@ -384,8 +394,7 @@ main {
     width: 40%;
   }
   .home_title {
-    font-size: 4rem;
-    margin-top: 80px;
+    font-size: 3.5rem;
     line-height: 6rem;
   }
   .home_info a,
