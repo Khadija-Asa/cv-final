@@ -1,4 +1,4 @@
-.skills_title {
+.skills_subtitle {
   margin: 30px auto;
   width: 100%;
 }
@@ -165,7 +165,7 @@
   .skills_box {
     display: flex;
   }
-  .skills_title {
+  .skills_subtitle {
     width: 100%;
   }
   .none {
@@ -234,7 +234,7 @@
     top: 25px;
     left: 25px;
   }
-  .skills_title h4 {
+  .skills_subtitle h4 {
     font-size: 1.5rem;
   }
   .card p {

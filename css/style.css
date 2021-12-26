@@ -34,9 +34,6 @@ html {
 
 /*===== NAV =====*/
 
-main {
-}
-
 .header {
   background-color: #fff;
   box-shadow: 0 3px 4px rgba(146,161,176,.15);
@@ -259,6 +256,19 @@ main {
   }
 }
 
+@media only screen and (min-width: 1440px) {
+  .nav-logo {
+    padding-left: 3rem;
+  }
+}
+
+@media only screen and (min-width: 1880px) {
+  .nav-logo {
+    padding-left: 5rem;
+  }
+}
+
+
 /*===== HOME =====*/
 
 .home {
@@ -332,6 +342,7 @@ main {
 @media only screen and (min-width: 768px) {
   .home {
     margin: 0 auto;
+    padding-bottom: 50px;
   }
   .text_box {
     margin-left: 30px;
@@ -343,7 +354,7 @@ main {
   .home_title {
     font-size: 1.8rem;
     line-height: 2.5rem;
-    padding-top: 40px;
+    padding-top: 30px;
   }  
   .home_image {
     width: 45%;
@@ -378,6 +389,12 @@ main {
 }
 
 @media only screen and (min-width: 1440px) {
+  .home {
+    height: 100vh;
+    margin: 0 auto;
+    padding-bottom: 50px;
+  }
+
   .home_image {
     margin-top: 90px;
     width: 40%;
@@ -389,17 +406,12 @@ main {
 }
 
 @media only screen and (min-width: 1880px) {
-  .home_image {
-    margin-top: 100px;
-    width: 40%;
+  .navbar {
+    padding-left: 6rem;
   }
   .home_title {
-    font-size: 3.5rem;
-    line-height: 6rem;
-  }
-  .home_info a,
-  .home_button a {
-    font-size: 1.8rem;
+    font-size: 3rem;
+    line-height: 5rem;
   }
 }
 
@@ -409,8 +421,10 @@ h3 {
 
 hr {
   background-color: #1A6449;
+  border-radius: 1rem;
+  height: 6px;
   margin-bottom: 5rem;
-  width: 50%;
+  width: 3rem;
 }
 
 .back_to_top a {

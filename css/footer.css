@@ -1,5 +1,5 @@
 footer {
-  margin-top: 5rem;
+  margin-top: 10px;
 }
 
 .social_media {
@@ -118,14 +118,14 @@ footer {
 
 @media only screen and (min-width: 1880px) {
   .social_media a {
-    font-size: 2.rem;
+    font-size: 2rem;
     margin-right: 10px;
   }
   .informations {
-    font-size: 1.8rem;
+    font-size: 1.3rem;
   }
   .informations_title {
-    font-size: 1.5rem;
+    font-size: 1.4rem;
   }
   .informations_list ul {
     margin-left: 10rem;
