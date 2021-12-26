@@ -1,41 +1,129 @@
-.illustration_box {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  row-gap: 10px;
+.skills h4 {
+  margin: 30px auto;
 }
 
-h4 {
+.skills_img {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.skills_img img {
+  width: 100%;
+}
+
+.card {
+  width: 120px;
+  height: 150px;
+  background: #fff;
+  border-top-right-radius: 20px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  box-shadow: 0 14px 26px rgba(0,0,0,0.04);
+  transition: all 0.3s ease-out;
+  margin: 10px auto;
+  z-index: 0;
+}
+
+.circle {
+  width: 90px;
+  height: 90px;
+  top: 15px;
+  border-radius: 50%;
+  background: #fff;
+  border: 2px solid var(--bg-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  z-index: 1;
+  transition: all 0.3s ease-out;
+}
+
+.overlay {
+  width: 90px;
+  position: absolute; 
+  height: 90px;
+  border-radius: 50%;
+  background: var(--bg-color);
+  top: 5px;
+  left: 10px;
+  z-index: 0;
+  transition: transform 0.3s ease-out;
+}
+
+.card:hover {
+  transform: translateY(-5px) scale(1.005) translateZ(0);
+}
+
+.card:hover .overlay {
+  transform: scale(4) translateZ(0);
+}
+
+.card:active {
+  transform: scale(1) translateZ(0);
+}
+
+.card p {
   font-size: 1.5rem;
-  margin: 10% 0 10% 0;
-  text-decoration: #1A6449 underline 10%;
-  text-underline-offset: 2px;
+  color: black;
+  margin-top: 30px;
+  z-index: 1000;
+  transition: color 0.3s ease-out;
 }
 
-.illustration_box img {
-  box-shadow: 0 1px 10px rgb(14 36 49 / 20%);
-  width: 60%;
-  margin: 0 auto;
+.vertical {
+  display: none;
 }
 
-@media only screen and (min-width: 1024px) {
-  .illustration_box {
-    display: flex;
-  }
-  .illustration_box img {
-    width: 10%;
-    margin: 5px;
-  }
-  h4 {
-    margin: 50px 0 40px 0;
-  }
+.html {
+  --bg-color: #e54c21;
 }
-
-@media only screen and (min-width: 1440px) {
-  h4 {
-    font-size: 2rem;
-  }
-  .illustration_box img {
-    width: 15%;
-    margin: 10px;
-  }
+.css {
+  --bg-color: #264de4;
+}
+.javascript {
+  --bg-color: #e29630;
+}
+.react {
+  --bg-color: #61dbfb;
+}
+.php {
+  --bg-color: #787cb4;
+}
+.wordpress {
+  --bg-color: #016087;
+}
+.laravel {
+  --bg-color: #fd3a2d;
+}
+.bootstrap {
+  --bg-color: #593688;
+}
+.vscode {
+  --bg-color: #2c83ba;
+}
+.ubuntu {
+  --bg-color: #de4815;
+}
+.github {
+  --bg-color: #4e4e50;
+}
+.git {
+  --bg-color: #f25134;
+}
+.trello {
+  --bg-color: #0079bf;
+}
+.figma {
+  --bg-color: #ff7262;
+}
+.shopify {
+  --bg-color: #95bf47;
+}
+.mysql {
+  --bg-color: #00618a;
 }
