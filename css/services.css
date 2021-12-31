@@ -1,76 +1,63 @@
-body {
-  margin: 0;
-  font-family: "Roboto";
-  font-size: 16px;
-  display: flex;
-  flex-direction: column;
-  height: 100vh;
-  justify-content: center;
+.services img {
+  height: 15vh;
+  width: 100%;
 }
 
-.carousel {
-  padding: 20px;
-  perspective: 500px;
-  overflow: hidden;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+.services img:hover {
+  transform: rotate(2deg);
 }
-.carousel > * {
-  flex: 0 0 auto;
+
+.services p {
+  background: rgb(13,27,42);
+  background: linear-gradient(18deg, rgba(13,27,42,1) 0%, rgba(26,100,64,1) 50%);
+  color: #fff;
+  font-weight: 800;
+  letter-spacing: .1rem;
+  margin: 0 auto;
+  margin-bottom: 30px;
+  padding-top: .7rem;
+  padding-bottom: .7rem;
+  text-transform: uppercase;
 }
-.carousel figure {
-  margin: 0;
-  width: 400px;
-  transform-style: preserve-3d;
-  transition: transform 0.5s;
-  transform-origin: 50% 50% -482.8427124746px;
+
+@media only screen and (min-width: 768px) {
+  .services_box {
+    padding: 0 50px 100px 50px;
+  }  
+  .services img {
+    height: 20vh;
+  }
+  .services p {
+    margin-bottom: 50px;
+  }
 }
-.carousel figure img {
-  width: 100%;
-  box-sizing: border-box;
-  padding: 0 40px;
-  opacity: 0.9;
+
+@media only screen and (min-width: 1024px) {
+  .services_box {
+    padding: 0 60px 100px 60px;
+  }  
+  .services img {
+    height: 30vh;
+  }
+  .services p {
+    font-size: 1.2rem;
+    margin-bottom: 50px;
+  }
 }
-.carousel figure img:not(:first-of-type) {
-  position: absolute;
-  left: 0;
-  top: 0;
-  transform-origin: 50% 50% -482.8427124746px;
+
+@media only screen and (min-width: 1440px) {
+  .services p {
+    font-size: 1.5rem;
+    margin-bottom: 60px;
+  }
 }
-.carousel figure img:nth-child(2) {
-  transform: rotateY(0.7853981634rad);
-}
-.carousel figure img:nth-child(3) {
-  transform: rotateY(1.5707963268rad);
-}
-.carousel figure img:nth-child(4) {
-  transform: rotateY(2.3561944902rad);
-}
-.carousel figure img:nth-child(5) {
-  transform: rotateY(3.1415926536rad);
-}
-.carousel figure img:nth-child(6) {
-  transform: rotateY(3.926990817rad);
-}
-.carousel figure img:nth-child(7) {
-  transform: rotateY(4.7123889804rad);
-}
-.carousel figure img:nth-child(8) {
-  transform: rotateY(5.4977871438rad);
-}
-.carousel nav {
-  display: flex;
-  justify-content: center;
-  margin: 20px 0 0;
-}
-.carousel nav button {
-  flex: 0 0 auto;
-  margin: 0 5px;
-  cursor: pointer;
-  color: #333;
-  background: none;
-  border: 1px solid;
-  letter-spacing: 1px;
-  padding: 5px 10px;
+
+@media only screen and (min-width: 1880px) {
+  .services_box {
+    padding: 0 100px 100px 100px;
+  }  
+  .services p {
+    font-size: 1.2rem;
+    margin-bottom: 50px;
+  }
 }
