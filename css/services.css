@@ -1,34 +1,74 @@
-.services img {
-  height: 15vh;
+.services {
+  padding-bottom: 100px;
+}
+.services_text {
+  background-color: #0D1B2A;
+  padding: 20px;
+  margin-bottom: 50px;
+}
+
+.services_text img {
+  margin: 0 auto;
+  margin-top: -20px;
+  height: 55%;
+  width: 55%;
+}
+
+.services_text_1,
+.services_text_2 {
+  color: #fff;
+  font-weight: 600;
+  letter-spacing: .1rem;
+  text-transform: uppercase;
+}
+
+.services_text_2 {
+  font-size: .8rem;
+}
+
+.services_box img {
+  height: 10vh;
   width: 100%;
 }
 
-.services img:hover {
+.services_box img:hover {
   transform: rotate(2deg);
 }
 
-.services p {
+.services_box p {
   background: rgb(13,27,42);
   background: linear-gradient(18deg, rgba(13,27,42,1) 0%, rgba(26,100,64,1) 50%);
   color: #fff;
   font-weight: 800;
   letter-spacing: .1rem;
-  margin: 0 auto;
   margin-bottom: 30px;
-  padding-top: .7rem;
-  padding-bottom: .7rem;
+  padding-top: .3rem;
+  padding-bottom: .3rem;
   text-transform: uppercase;
+}
+
+@media only screen and (min-width: 425px) {
+  .services_text_1 {
+    font-size: 1.5rem;
+  }
+  .services_text_2 {
+    font-size: 1rem;
+  }
 }
 
 @media only screen and (min-width: 768px) {
   .services_box {
     padding: 0 50px 100px 50px;
   }  
-  .services img {
+  .services_box img {
     height: 20vh;
   }
-  .services p {
+  .services_box p {
     margin-bottom: 50px;
+  }
+  .services_text {
+    margin-bottom: 90px;
+    padding: 40px;
   }
 }
 
@@ -36,17 +76,17 @@
   .services_box {
     padding: 0 60px 100px 60px;
   }  
-  .services img {
-    height: 30vh;
+  .services_box img {
+    height: 25vh;
   }
-  .services p {
+  .services_box p {
     font-size: 1.2rem;
     margin-bottom: 50px;
   }
 }
 
 @media only screen and (min-width: 1440px) {
-  .services p {
+  .services_box p {
     font-size: 1.5rem;
     margin-bottom: 60px;
   }
@@ -56,8 +96,15 @@
   .services_box {
     padding: 0 100px 100px 100px;
   }  
-  .services p {
+  .services_box p {
     font-size: 1.2rem;
     margin-bottom: 50px;
   }
+  .services_text_1 {
+    font-size: 2rem;
+  }
+  .services_text_2 {
+    font-size: 1.5rem;
+  }
 }
+
