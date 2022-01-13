@@ -1,0 +1,139 @@
+.about {
+  padding-bottom: 100px;
+}
+
+.about_img {
+  position: relative;
+}
+
+.about_img img {
+  margin: auto;
+  width: 80%;
+}
+
+.about_img:before {
+  content: "";
+  height: 25px;
+  width: 60px;
+  background-color: rgba(255, 255, 255, .3);
+  position: absolute;
+  top: -6px;
+  left: 25px;
+  transform: translateX(-30%) translateY(10%) rotate(-45deg);
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.4);
+}
+
+.wrapper {
+  display: inline-flex;
+}
+ 
+.wrapper .icon {
+  align-items: center;
+  border-radius: 50%;
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  display: flex;
+  font-size: 20px;
+  height: 50px;
+  justify-content: center;
+  margin: 10px;
+  padding: 15px;
+  position: relative;
+  transition: all 0.2s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  width: 50px;
+}
+
+.wrapper .tooltip {
+  background-color: #ffffff;
+  border-radius: 5px;
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+  color: #ffffff;
+  font-size: 14px;
+  opacity: 0;
+  padding: 5px 8px;
+  position: absolute;
+  pointer-events: none;
+  top: 0;
+  transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.wrapper .tooltip::before {
+  background-color: #ffffff;
+  bottom: -3px;
+  content: "";
+  height: 8px;
+  left: 50%;
+  position: absolute;
+  transform: translate(-50%) rotate(45deg);
+  transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  width: 8px;
+}
+
+.wrapper .icon:hover .tooltip {
+  opacity: 1;
+  pointer-events: auto;
+  top: -45px;
+  visibility: visible;
+}
+
+.wrapper .icon:hover span,
+.wrapper .icon:hover .tooltip {
+  color: #fff;
+  text-shadow: 0px -1px 0px rgba(0, 0, 0, 0.1);
+}
+
+/*Google*/
+.wrapper .google:hover,
+.wrapper .google:hover .tooltip,
+.wrapper .google:hover .tooltip::before {
+  background-color: #dc483c;
+  color: #fff;
+}
+
+.wrapper .google a {
+  color: #dc483c;
+}
+
+/*Linkedin*/
+.wrapper .linkedin:hover,
+.wrapper .linkedin:hover .tooltip,
+.wrapper .linkedin:hover .tooltip::before {
+  background-color: #0179b5;
+  color: #fff;
+}
+
+.wrapper .linkedin a {
+  color: #0179b5;
+}
+
+/*Github*/
+.wrapper .github:hover,
+.wrapper .github:hover .tooltip,
+.wrapper .github:hover .tooltip::before {
+  background-color: #333333;
+  color: #fff;
+}
+
+.wrapper .github a {
+  color: #333333;
+}
+
+.about_paragraph p {
+  margin-left: 30px;
+}
+
+.dash {
+  color: #1A6449;
+}
+
+.list-group .fas {
+  color: #1A6449;
+  margin-left: px;
+  margin-right: 5px;
+}
+
+.list-group-item {
+  font-weight: 600;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
