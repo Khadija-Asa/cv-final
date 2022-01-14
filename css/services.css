@@ -2,7 +2,7 @@
   padding-bottom: 100px;
 }
 .services_text {
-  background: no-repeat fixed url(/documents/images/services/desk-white.png);
+  background: no-repeat fixed url(../documents/images/services/desk-white.png);
   background-size: cover;
   padding: 20px;
   margin-bottom: 50px;
