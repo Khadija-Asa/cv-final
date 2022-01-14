@@ -66,6 +66,6 @@ AOS.init({
 
   // Settings that can be overridden on per-element basis, by `data-aos-*` attributes:
   delay: 400, // values from 0 to 3000, with step 50ms
-  duration: 1000, // values from 0 to 3000, with step 50ms
+  duration: 2000, // values from 0 to 3000, with step 50ms
 
 });
