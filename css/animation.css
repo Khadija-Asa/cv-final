@@ -1,0 +1,81 @@
+/*Global animation*/
+.reveal {
+  position: relative;
+  opacity: 0;
+}
+
+.reveal.active {
+  opacity: 1;
+}
+.active.fade-bottom {
+  animation: fade-bottom 1s ease-in;
+}
+.active.fade-left {
+  animation: fade-left 1s ease-in;
+}
+.active.fade-right {
+  animation: fade-right 1s ease-in;
+}
+@keyframes fade-bottom {
+  0% {
+    transform: translateY(50px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+@keyframes fade-left {
+  0% {
+    transform: translateX(-100px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes fade-right {
+  0% {
+    transform: translateX(100px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+/*Title animation*/
+.home_title .type {
+  position: absolute;
+}
+
+.type {
+  color: #1A6449;
+  overflow: hidden;
+  white-space: nowrap;
+  display:block;
+  border-right: 3px solid #1A6449;
+  animation: typewriter 10s steps(20) infinite, blinking-cursor 5s infinite;
+  animation-fill-mode: forwards;
+}
+
+@keyframes typewriter {
+  0% { 
+    width:0
+  }
+  50% { 
+    width: 80%;
+  }
+  100% { 
+    width: 0;
+  }
+}
+
+@keyframes blinking-cursor {
+  from { border-color: transparent }
+  to { border-color: #1A6449 }
+}

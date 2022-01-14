@@ -44,25 +44,21 @@ function backToTop() {
   document.documentElement.scrollTop = 0;
 }
 
-// TYPE EFFECT H1
+//ANIMATION REVEAL
+function reveal() {
+  var reveals = document.querySelectorAll(".reveal");
 
-function typeEffect(element, speed) {
-  var text = element.innerHTML;
-  element.innerHTML = "";
-  
-  var i = 0;
-  var timer = setInterval(function() {
-    if (i < text.length) {
-      element.append(text.charAt(i));
-      i++;
+  for (var i = 0; i < reveals.length; i++) {
+    var windowHeight = window.innerHeight;
+    var elementTop = reveals[i].getBoundingClientRect().top;
+    var elementVisible = 150;
+
+    if (elementTop < windowHeight - elementVisible) {
+      reveals[i].classList.add("active");
     } else {
-      clearInterval(timer);
+      reveals[i].classList.remove("active");
     }
-  }, speed);
+  }
 }
 
-var speed = 75;
-var type = document.querySelector('.type');
-var delay = type.innerHTML.length * speed + speed;
-
-typeEffect(type, speed);
+window.addEventListener("scroll", reveal);
