@@ -1,5 +1,4 @@
 // MENU BURGER
-
 const burger = document.querySelector(".burger");
 const navMenu = document.querySelector(".nav-menu");
 
@@ -20,7 +19,6 @@ function closeMenu() {
 }
 
 // SCROLL TO TOP BUTTON
-
 let mybutton = document.getElementById("btn-back-to-top");
 
 window.onscroll = function () {
@@ -62,3 +60,12 @@ function reveal() {
 }
 
 window.addEventListener("scroll", reveal);
+
+//Global animation
+AOS.init({  
+
+  // Settings that can be overridden on per-element basis, by `data-aos-*` attributes:
+  delay: 400, // values from 0 to 3000, with step 50ms
+  duration: 1000, // values from 0 to 3000, with step 50ms
+
+});
