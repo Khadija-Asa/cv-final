@@ -33,3 +33,59 @@
   from { border-color: transparent }
   to { border-color: #1A6449 }
 }
+
+@media only screen and (min-width: 425px) {
+  @keyframes typewriter {
+    0% { 
+      width: 0;
+    }
+    50% { 
+      width: 65%;
+    }
+    100% { 
+      width: 0;
+    }
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  @keyframes typewriter {
+    0% { 
+      width: 0;
+    }
+    50% { 
+      width: 36%;
+    }
+    100% { 
+      width: 0;
+    }
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  @keyframes typewriter {
+    0% { 
+      width: 0;
+    }
+    50% { 
+      width: 30%;
+    }
+    100% { 
+      width: 0;
+    }
+  }
+}
+
+@media only screen and (min-width: 1880px) {
+  @keyframes typewriter {
+    0% { 
+      width: 0;
+    }
+    50% { 
+      width: 23%;
+    }
+    100% { 
+      width: 0;
+    }
+  }
+}
