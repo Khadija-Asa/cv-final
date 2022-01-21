@@ -1,0 +1,47 @@
+#cookiebar {
+  display: none;
+  left: 5px;
+  position: fixed;
+  right: 5px;
+  width: 100%;
+  z-index: 2;
+}
+
+#cookiebarBox .container-fluid {
+  background-color: #e6e6e5;
+  border-radius: 10px 10px 0 0;
+  -moz-border-radius: 3px;
+  -webkit-border-radius: 3px;
+  overflow: hidden;
+  padding: 10px;
+  text-align: center;
+}
+
+#cookiebarBox {
+  position: fixed;
+  bottom: 0;
+  left: 2px;
+  right: 2px;
+  z-index: 2;
+}
+
+.cookies_box p {
+  display: inline-flex;
+}
+
+.cookieok {
+  border-radius: 3px;
+  background-color: #fff;
+  color: #1A6449 !important;
+  font-weight: 600;
+  line-height: 2.5em;
+  height: 2.5em;
+  display: block;
+  cursor: pointer;
+  max-width: 200px;
+  margin: 0 auto;
+}
+
+.cookies .fas {
+  color: #1A6449;
+}
