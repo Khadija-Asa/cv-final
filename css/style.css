@@ -311,7 +311,7 @@ html {
   background: #1A6449;
   border-radius: 0.5rem 5rem 5rem 5rem;
   color: #fff;
-  margin-right: 3%;
+  margin-right: 5%;
   padding: 0.80rem 1rem;
 }
 
@@ -340,6 +340,7 @@ html {
 
 .home_info:hover,
 .home_button:hover {
+  transform: scale(1.1);
 }
 
 @media only screen and (min-width: 0) and (max-width: 374px) {
@@ -348,7 +349,7 @@ html {
   }
 }
 
-@media only screen and (min-width: 0) and (max-width: 425px) {
+@media only screen and (min-width: 0) and (max-width: 767px) {
   .home {
     height: 100vh;
   }

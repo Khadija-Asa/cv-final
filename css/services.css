@@ -1,19 +1,14 @@
 .services {
   padding-bottom: 100px;
 }
+
 .services_text {
-  background: no-repeat fixed url(../documents/images/services/desk-white.png);
-  background-size: cover;
   padding: 20px;
   margin-bottom: 50px;
-  width: 100%;
 }
 
-.services_text img {
-  margin: 0 auto;
-  margin-top: -20px;
-  height: 55%;
-  width: 55%;
+.services_text .fas {
+  color: #1A6449;
 }
 
 .services_text_1,
@@ -28,8 +23,12 @@
 }
 
 .services_box img {
-  height: 10vh;
+  height: 15vh;
   width: 100%;
+}
+
+.services_box .bi {
+  color: #1A6449;
 }
 
 .services_box img:hover {
@@ -39,8 +38,8 @@
 .services_box p {
   font-weight: 800;
   letter-spacing: .1rem;
-  margin-bottom: 30px;
-  padding-top: .3rem;
+  margin-bottom: 40px;
+  padding-top: 1rem;
   padding-bottom: .3rem;
   text-transform: uppercase;
 }
@@ -52,11 +51,14 @@
   .services_text_2 {
     font-size: 1rem;
   }
+  .services_box {
+    padding: 0 30px 0 30px;
+  }  
 }
 
 @media only screen and (min-width: 768px) {
   .services_box {
-    padding: 0 50px 100px 50px;
+    padding: 0 50px 0 50px;
   }  
   .services_box img {
     height: 20vh;
@@ -72,10 +74,10 @@
 
 @media only screen and (min-width: 1024px) {
   .services_box {
-    padding: 0 60px 100px 60px;
+    padding: 0 55px 0 55px;
   }  
   .services_box img {
-    height: 25vh;
+    height: 28vh;
   }
   .services_box p {
     font-size: 1.2rem;
@@ -92,10 +94,14 @@
 
 @media only screen and (min-width: 1880px) {
   .services_box {
-    padding: 0 100px 100px 100px;
+    padding: 0 100px 0 100px;
+  } 
+  .services_box img {
+    height: 30vh;
+    width: 100%;
   }  
   .services_box p {
-    font-size: 1.2rem;
+    font-size: 1.3rem;
     margin-bottom: 50px;
   }
   .services_text_1 {
