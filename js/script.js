@@ -18,6 +18,7 @@ function closeMenu() {
     navMenu.classList.remove("active");
 }
 
+
 // SCROLL TO TOP BUTTON
 let mybutton = document.getElementById("btn-back-to-top");
 
@@ -61,11 +62,12 @@ function backToTop() {
 
 // window.addEventListener("scroll", reveal);
 
+
 //Global animation
 AOS.init({  
 
   // Settings that can be overridden on per-element basis, by `data-aos-*` attributes:
-  delay: 400, // values from 0 to 3000, with step 50ms
-  duration: 500, // values from 0 to 3000, with step 50ms
+  delay: 200, // values from 0 to 3000, with step 50ms
+  duration: 300, // values from 0 to 3000, with step 50ms
 
 });
