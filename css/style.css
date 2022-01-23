@@ -32,6 +32,10 @@ html {
   font-weight: bold;
 }
 
+.light {
+  background-color: #f8f9fa;
+}
+
 /*===== NAV =====*/
 
 .header {

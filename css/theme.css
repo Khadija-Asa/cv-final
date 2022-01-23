@@ -1,0 +1,141 @@
+.checkbox {
+  opacity: 0;
+  position: absolute;
+}
+
+.theme-switch {
+  padding: 5px;
+  position: fixed;
+  right: 0;
+  top: 250px;
+  z-index: 1100;
+}
+
+.label {
+  width: 40px;
+  height: 100px;
+  background-color: #1e272e;
+  border-radius: 30px;
+  padding: 10px;
+  position: relative;
+}
+
+.switcher {
+  background-color: #fff;
+  background-image: url(/documents/images/icônes/dark.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: absolute;
+  top: 5.5px;
+  left: 2.5px;
+  height: 35px;
+  width: 35px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.checkbox:checked + .label .switcher {
+  transform: translateY(56px);
+}
+
+.checkbox:checked + .label .switcher {
+  background-color: #1e272e;
+  background-image: url(/documents/images/icônes/brightness.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.checkbox:checked + .label  {
+  background-color: #fff;
+}
+
+body.dark {
+  background-color: #1e272e;
+}
+
+body.dark .icon {
+  background-color: #fff;
+}
+
+body.dark .bar {
+  background-color: #fff;
+}
+
+body.dark h1 {
+  color: #fff;
+}
+
+body.dark h2 {
+  color: #fff;
+}
+
+body.dark h3 {
+  color: #fff;
+}
+
+body.dark h4 {
+  color: #fff;
+}
+
+body.dark h5 {
+  color: #fff;
+}
+
+body.dark h6 {
+  color: #fff;
+}
+
+body.dark p {
+  color: #fff;
+}
+
+body.dark ul {
+  color: #fff;
+}
+
+body.dark .informations a {
+  color: #fff;
+}
+
+body.dark .copyright {
+  color: #fff;
+}
+
+body.dark nav {
+  background-color: #1e272e;
+}
+
+body.dark ul {
+  background-color: #1e272e;
+}
+
+body.dark li {
+  background-color: #1e272e;
+}
+
+body.dark .home {
+  background-color: #1e272e;
+}
+
+body.dark .services {
+  background-color: #1e272e;
+}
+
+body.dark .prices {
+  background-color: #1e272e;
+}
+
+body.dark .card {
+  background-color: #1e272e;
+}
+
+body.dark .skills_img {
+  background-color: #1e272e;
+}
+
+body.dark .light {
+  background-color: #1e272e;
+}
+
+/*Mentions légales*/
+

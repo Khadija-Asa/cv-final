@@ -71,3 +71,11 @@ AOS.init({
   duration: 300, // values from 0 to 3000, with step 50ms
 
 });
+
+//Dark mode
+const checkbox = document.querySelector("#checkbox");
+
+checkbox.addEventListener("change", () => {
+  // Toggle website theme
+  document.body.classList.toggle("dark");
+});
