@@ -4,43 +4,49 @@
 }
 
 .theme-switch {
-  padding: 5px;
+  border-radius: 50px;
+  padding-right: 1px;
   position: fixed;
   right: 0;
-  top: 250px;
-  z-index: 1100;
+  top: 240px;
+  z-index: 1;
 }
 
 .label {
-  width: 40px;
-  height: 100px;
-  background-color: #1e272e;
-  border-radius: 30px;
+  background-color: #0D1B2A;
+  border-radius: 100px;
+  height: 63px;
   padding: 10px;
   position: relative;
+  width: 29px;
+}
+
+label, .label {
+  margin-bottom: 0;
 }
 
 .switcher {
   background-color: #fff;
-  background-image: url(/documents/images/icônes/dark.png);
+  background-image: url(../documents/images/icônes/dark.png);
   background-repeat: no-repeat;
   background-size: cover;
+  margin: auto;
   position: absolute;
-  top: 5.5px;
-  left: 2.5px;
-  height: 35px;
-  width: 35px;
+  top: 3px;
+  left: 2.4px;
+  height: 25px;
+  width: 25px;
   border-radius: 50%;
   cursor: pointer;
 }
 
 .checkbox:checked + .label .switcher {
-  transform: translateY(56px);
+  transform: translateY(33px);
 }
 
 .checkbox:checked + .label .switcher {
-  background-color: #1e272e;
-  background-image: url(/documents/images/icônes/brightness.png);
+  background-color: #0D1B2A;
+  background-image: url(../documents/images/icônes/brightness.png);
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -50,7 +56,7 @@
 }
 
 body.dark {
-  background-color: #1e272e;
+  background-color: #0D1B2A;
 }
 
 body.dark .icon {
@@ -101,41 +107,70 @@ body.dark .copyright {
   color: #fff;
 }
 
-body.dark nav {
+body.dark .nav-menu {
   background-color: #1e272e;
+}
+
+body.dark .nav-link {
+  background-color: #1e272e;
+}
+
+body.dark nav {
+  background-color: #0D1B2A;
 }
 
 body.dark ul {
-  background-color: #1e272e;
+  background-color: #0D1B2A;
 }
 
 body.dark li {
-  background-color: #1e272e;
+  background-color: #0D1B2A;
 }
 
 body.dark .home {
-  background-color: #1e272e;
+  background-color: #0D1B2A;
 }
 
 body.dark .services {
-  background-color: #1e272e;
+  background-color: #0D1B2A;
 }
 
 body.dark .prices {
-  background-color: #1e272e;
+  background-color: #0D1B2A;
 }
 
 body.dark .card {
-  background-color: #1e272e;
+  background-color: #0D1B2A;
 }
 
 body.dark .skills_img {
-  background-color: #1e272e;
+  background-color: #0D1B2A;
 }
 
 body.dark .light {
-  background-color: #1e272e;
+  background-color: #0D1B2A;
 }
 
 /*Mentions légales*/
 
+body.dark .close {
+  color: #fff;
+}
+
+body.dark .modal-content {
+  background-color: #0D1B2A;
+}
+
+@media only screen and (min-width: 1025px) {
+  .theme-switch {
+    top: 450px;
+  }
+  body.dark .nav-menu {
+    background-color: #0D1B2A;
+  }
+  
+  body.dark .nav-link {
+    background-color: #0D1B2A;
+    color: #fff;
+  }
+}
