@@ -5,12 +5,7 @@
 
 .services_text {
   font-size: 17px;
-  padding: 20px;
   margin-bottom: 50px;
-}
-
-.services_text .fas {
-  color: #1A6449;
 }
 
 .services_text_1,
@@ -24,12 +19,26 @@
   font-size: .8rem;
 }
 
+.services_text_3 {
+  background-image: linear-gradient(0deg, rgba(0,0,0,0.5), rgba(0, 0, 0, 0.5)),url(../documents/images/services/plant.jpg);
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: #fff;
+  font-weight: 900;
+  letter-spacing: .1rem;
+  line-height: 30px;
+  padding: 20px;
+  width: 100%;
+}
+
 .services_box img {
   height: 15vh;
   width: 100%;
 }
 
-.services_box .bi {
+.services_box .bi, .fas {
   color: #1A6449;
 }
 
@@ -76,7 +85,9 @@
   }
   .services_text {
     margin-bottom: 90px;
-    padding: 40px;
+  }
+  .services_text_3 {
+    padding: 50px 100px;
   }
 }
 
@@ -91,12 +102,22 @@
     font-size: 1.2rem;
     margin-bottom: 50px;
   }
+  .services_text_3 {
+    font-size: 1.2rem;
+    line-height: 40px;
+    padding: 50px 150px;
+  }
 }
 
 @media only screen and (min-width: 1440px) {
   .services_box p {
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     margin-bottom: 60px;
+  }
+  .services_text_3 {
+    font-size: 1.3rem;
+    line-height: 45px;
+    padding: 70px 350px;
   }
 }
 
@@ -117,5 +138,10 @@
   }
   .services_text_2 {
     font-size: 1.5rem;
+  }
+  .services_text_3 {
+    font-size: 1.5rem;
+    line-height: 50px;
+    padding: 70px 500px;
   }
 }
